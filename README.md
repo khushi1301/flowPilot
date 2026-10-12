@@ -4,6 +4,8 @@
 
 FlowPilot is a visual workflow automation builder. Drag steps onto a canvas, connect them, configure each one in a side panel, check the workflow for mistakes, and run it in a built-in simulator. Think of a flowchart that can actually run.
 
+> **Frontend-only for now.** FlowPilot runs entirely in the browser. Workflows are saved in `localStorage`, and the Run button is a simulator, so no real emails are sent and no real API calls are made. A backend that executes workflows for real is on the roadmap.
+
 ---
 
 ## Why I built this
@@ -48,7 +50,7 @@ Automation tools like Zapier and n8n are built on a graph editor, and building o
 | Layout | dagre |
 | Icons | lucide-react |
 | Build | Vite |
-| Storage | `localStorage`, no backend |
+| Storage | `localStorage` (frontend-only, no backend) |
 
 ## Getting started
 
@@ -56,7 +58,7 @@ You need Node.js 18 or newer.
 
 ```bash
 git clone https://github.com/khushi1301/flowPilot.git
-cd flowpilot
+cd flowPilot
 npm install
 npm run dev
 ```
